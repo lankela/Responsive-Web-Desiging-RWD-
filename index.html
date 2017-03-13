@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Responsive Web Design</title>
+	<meta name="viewport" content="width=devide-width" />
+	<meta charset="utf-8" />
+	<link rel="stylesheet" href="css/style.css" type="text/css">
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+	<script src="js/jquery.js"></script>
+	<script>
+
+	//display width of the screen
+		var showWidth = 1;
+
+		if (showWidth == 1){
+			$(document).ready(function(){
+				$(window).resize(function(){
+					var width = $(window).width();
+					document.getElementById('output_width').innerHTML="Window Width:"+width.toString();
+				});
+			});
+		};
+	</script>
+</head>
+<body>
+	<div id="output_width"></div>
+<div id="container"> 
+	<header class="main-header">
+
+		<img id="logo" src="images/rwd.png" alt="logo" />
+		<nav class="main-nav">
+			<ul>
+				<li> <a class="active" href="#">Home</a></li>
+				<li> <a href="#">Learn</a></li>
+				<li> <a href="#">BrainStorm</a></li>
+				<li> <a href="#">Create</a></li>
+				<li> <a href="#">Collaborate</a></li>
+				<li> <a href="#">Teach</a></li>
+			</ul>
+			</nav>
+	</header>
+ <div id="main">
+	 <div id="content">
+		 <article class="art1">
+		 	<header class="art-header">
+		 		<h2 class="title"><a href="#">First Post</a></h2>
+		 		<span> Created by: Sirisha on March 10 </span>
+		 	</header>
+
+			<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
+			<a class="readmore" href="#">Read More </a>
+		 </article>
+		 <article class="art2">
+		 	<header class="art-header">
+		 		<h2 class="title"><a href="#">Second Post</a></h2>
+		 		<span> Created by: Sirisha on March 10 </span>
+		 	</header>
+
+			<p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. </p>
+			<a class="readmore" href="#">Read More </a>
+		 </article>
+	 </div>
+
+	 <aside id="sidebar">
+	 	<div class="block">
+	 		<h2> Top side bar </h2>
+	 		<p>This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section </p>
+	 	</div>
+	 	<div class="block">
+	 		<h2> Mid side bar </h2>
+	 		<p> All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. </p>
+	 	</div>
+	 	<div class="block">
+	 		<h2> Bottom side bar </h2>
+	 		<p>The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.</p>
+	 	</div>
+	 </aside>
+
+ </div>
+
+ <div class="clr"></div>
+
+ <footer> 
+ <p> CopyRights & copy : RWD </p>
+ </footer>
+
+</div>
+</body>
+</html>
